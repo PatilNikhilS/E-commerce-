@@ -1,0 +1,64 @@
+#logo-size {
+    width: 150px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+@media (min-width:360px) {
+    #logo-size {
+        margin-left: 29%;
+        
+    }
+}
+@media (min-width:576px) {
+    #logo-size {
+        margin-left: 35%;
+    }
+}
+@media (min-width:768px) {
+    #logo-size {
+        margin-left: 40%;
+    }
+}
+#pills-login-tab, #pills-create-tab {
+    color:rgb(254, 136, 48);
+background-color: #fff;
+}
+/* #pills-login-tab:active, #pills-create-tab:active {
+color:rgb(254, 136, 48);
+background-color: #fff;
+} */
+.border {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+div .btn-signin {
+    background-color: rgb(254, 136, 48);
+    color: white;
+}
+div .btn-password {
+    background-color: rgb(253, 254, 255);
+    border: 2px solid rgb(254, 136, 48) ;
+}
+div .btn-1 {
+    background-color: rgb(2, 2, 255);
+    
+}
+div .btn-2 {
+    background-color: rgb(255, 2, 2);
+    
+}
+div .btn-3 {
+    background-color: rgb(2, 196, 255);
+    
+}
+div .btn-1 , div .btn-2 , div .btn-3 {
+    color: rgb(252, 252, 253);
+    width: 135px;
+    text-decoration: none;
+    justify-content: space-between;
+    
+}

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swag of India</title>
+    <!-- CSS Style Sheet  -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Bootstrap 4 link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- Font-awesome link to site ver:5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- flavicon icon link -->
+    <link rel="shortcut icon" href="img/flavicon.png" type="image/x-icon">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- the main navigation bar starts with bootstrap 5.1, contains social icons and search bar and site info -->
+    <nav class="navigation navbar navbar-expand-lg home-bar" role="navigation" aria-label="primary">
+        <div class="nav-box container-fluid">
+            <div class="sicons">
+                <span class="brand" aria-label="facebook ">
+                    <i class="fab fa-facebook"></i>
+                </span>
+                <span class="brand" aria-label="Youtube icon">
+                    <i class="fab fa-youtube"></i>
+                </span>
+                <span class="brand" aria-label="twitter icon">
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </div>
+            <div class="searchbar" role="search" aria-labelledby="search bar">
+                <input type="text" class="search" placeholder="Search ">
+                <a class="sicon">
+                    <i class="fas fa-search"></i>
+                </a>
+                <!-- hamburger icon for dropdown menu -->
+            </div>
+            <button class="navbar-toggler nav-light" type="button" data-bs-toggle="collapse" data-bs-value="#mainMenu">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <!-- bootstrap for dropdown/collapse menu -->
+            <div class="collapse navbar-collapse menu-one" id="mainMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item" id="phoneline" aria-label="contact number">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="#" class="nav-link phone-no" id="phone">+91 9999900000</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Sale on site </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Download App</a>
+                    </li>
+                </ul>
+                <!-- language container  -->
+                <div class="language-contai" id="contry" aria-label="Select language">
+                    <img src="Img/india.png" class="lang-img" alt="flag" id="flag" height="20px" width="25px">
+                    <form action="#">
+                        <select name="select" id="select1">
+                            <option value="india">India</option>
+                            <option value="uae">UAE</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Second sub menu nav2 -->
+    <nav class="navbar navbar-expand-lg bg-white nav-sub border-bottom" role="navigation" aria-label="secondary">
+        <div class="container-fluid nav-sub-container">
+            <!-- logo image -->
+            <div class="logo-img" aria-label="Logo of site"><img src="img/logo.png" alt="submenupart" class="logoimg">
+            </div>
+            <!-- button 2 -->
+            <button class="navbar-toggler nav-light bar2" type="button" data-bs-toggle="collapse"
+                data-bs-value="#subMenu" role="button" aria-expanded="false"> <span class="navbar-toggler-icon"><i
+                        class="fas fa-bars"></i></span></button>
+            <!-- bootstrap for menu 2  -->
+            <div class="collapse navbar-collapse sub-collapse" id="subMenu">
+                <ul class="navbar-nav navSub">
+                    <li class="nav-item sub-item"><a href="#" class="nav-link sub-link active-nav-menu">Home</a></li>
+                    <li class="nav-item dropdown sub-item"><a href="#" class="nav-link dropdown-toggle sub-link"
+                            role="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+                            aria-label="dropdown menu">Categories</a>
+                        <!-- sub menu for dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item">Men</a></li>
+                            <li><a href="#" class="dropdown-item">Women</a></li>
+                            <li><a href="#" class="dropdown-item">kids</a></li>
+                            <li><a href="#" class="dropdown-item">Sports</a></li>
+                        </ul>
+                        <!-- sub dropdown ends here -->
+                    </li>
+                    <li class="nav-item sub-item"><a href="#" class="nav-link sub-link">Latest</a></li>
+                    <li class="nav-item sub-item"><a href="#" class="nav-link sub-link">Blog</a></li>
+                    <li class="nav-item sub-item"><a href="#" class="nav-link sub-link">Pages</a></li>
+                    <li class="nav-item sub-item"><a href="#" class="nav-link sub-link">Contact</a></li>
+                </ul>
+                <!-- menu 2 bootstrap end -->
+                <!-- Sign In button -->
+                <a href="./loginpage.html"><button type="button" class="signin-btn" role="button" aria-expanded="false"
+                        data-bs-toggle="modal" data-bs-value="#exampleModal">SIGN IN</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- second navbar ends here -->
+
+    <!-- Menu nav2 Ends here -->
+    <!-- Latest offers and product -->
+    <section class="container offers" role="region" aria-label="offers">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <!-- slides 1/2 display -->
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- offer display 1 -->
+                <div class="carousel-item active" role="slider" aria-label="slide 1">
+                    <div class="d-flex offer-slider w-100">
+                        <!-- Image and offer details -->
+                        <div class="offer">
+                            <div class="offer-img-container" role="img" aria-label="offer image 1">
+                                <img src="img/mainimg.jpg" class="offer-img" alt aria-expanded="true">
+                            </div>
+                            <div class="offer-detail-container" id="offerdetail1">
+                                <h4>60% Discount</h4>
+                                <h1>Ethenic Collection</h1>
+                                <h3>Best Collection of 2022!</h3>
+                                <div class="btn-container">
+                                    <!-- display shop button -->
+                                    <button type="button" class="shop-btn" role="button" aria-expanded="false">SHOP
+                                        NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- offer display 2 -->
+                <div class="carousel-item" role="slider" aria-label="slide 2">
+                    <div class="d-flex offer-slider w-100">
+                        <div class="offer">
+                            <!-- Image and offer details -->
+                            <div class="offer-img-container" role="img" aria-label="offer image 2">
+                                <img src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=334&amp;q=80"
+                                    alt="" class="offer-img" aria-hidden="true">
+                            </div>
+                            <div class="offer-detail-container" id="offerdetail2">
+                                <h4>60% Discount</h4>
+                                <h1>Formals</h1>
+                                <h3>Best Collections of 2022!</h3>
+                                <div class="btn-container">
+                                    <!-- display shop button -->
+                                    <button type="button" class="shop-btn" role="button" aria-expanded="false">SHOP
+                                        NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Carousel ends here -->
+
+    <!-- Various type for every one 
+    preview and next buttons change inter between -->
+    <section class="categories" role="region" aria-label="categories">
+        <span class="pre-icon" aria-label="preview icon">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+        <div class="categories-box">
+            <h1>SHOP BY CATEGORIES</h1>
+            <div class="diff-categories">
+
+                <div class="categories-t1">
+                    <div class="categories-type1">
+                        <img src="img/cat1.png" alt="type1" class="img1-1" aria-hidden="true">
+                    </div>
+                    <div class="type1info">
+                        <h4>WOMEN</h4>
+                        <button class="shop" role="button" aria-expanded="false">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="categories-t2">
+                    <div class="categories-type">
+                        <img src="img/cat2.png" alt="type1" class="img1-1" id="img2-eth" aria-hidden="true">
+                    </div>
+                    <div class="type2info">
+                        <h4>ETHENIC</h4>
+                        <button class="shop" role="button" aria-expanded="false">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="categories-t3">
+                    <div class="categories-type">
+                        <img src="img/cat3.png" alt="type1" class="img1-1" aria-hidden="true">
+                    </div>
+                    <div class="type3info">
+                        <h4>MENS</h4>
+                        <button class="shop" role="button" aria-expanded="true">SHOP NOW</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <span class="next-icon" aria-label="next-view icon">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+    </section>
+    <!-- latest arrivel product in single column -->
+    <section class="latest-trend" role="region" aria-label="latest Product">
+        <div class="latest-name">
+            <!-- Navigation bar for menu 3 bootstap  -->
+            <nav class=" navbar navbar-expand-lg  " role="navigation" aria-label="secondary">
+                <div class="headline">
+                    <h1>LATEST PRODUCTS </h1>
+                </div>
+                <!-- button hamburger -->
+                <button class="navbar-toggler nav-light" type="button" data-bs-toggle="collapse"
+                    data-bs-value="#navLatest" aria-expanded="false">
+                    <span><i class="fas fa-bars"></i></span>
+                </button>
+                <!-- dropdown menu 3  -->
+                <div class="collapse navbar-collapse " id="navLatest">
+                    <ul class="navbar-nav menu3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Populer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Best Rated</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- dropdown end  -->
+            </nav>
+        </div>
+        <!-- Product display list -->
+        <div class="prod-list">
+            <div class="prod-box-level-1">
+                <div class="prod-box-list-item-details level-2">
+                    <!-- creating same structure for this element -->
+                    <!-- Product-1 -->
+                    <div class="prod-list-with-img-and-rating level-3" aria-labelledby="Product image and deatials">
+                        <img src="img/product1.png" alt="" class="prod-img-display">
+                        <!-- adding images and product deatials -->
+                        <span class="new">NEW</span>
+                        <div class="display-prod-info level-5">
+                            <p class="prod-name-dis">Short For Men </p>
+                            <p class="prod-price-offer">
+                                <span class="actual"> 449/-</span>
+                                <span class="dis-count">599/-</span>
+                                <span class="parcent-off">(33%)</span>
+                            </p>
+                            <!-- rating -->
+                            <p>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="prod-blar"></div>
+                        <div class="aft-hover-container">
+                            <a class="wish-adder">
+                                <p class="hover-disp">
+                                    <i class="fas fa-heart"></i>
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="hover-disp">
+                                    <i class="fas fa-eye"></i>
+                                </p>
+                            </a>
+                            <a class="add-to-cart">
+                                <p class="hover-disp">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product-2 -->
+                    <div class="prod-list-with-img-and-rating level-3" aria-labelledby="Product image and deatials">
+                        <img src="img/product2.png" alt="item-display-product" class="prod-img-display">
+
+                        <div class="display-prod-info">
+                            <p class="prod-name-dis"> Cotten T-Shirt For Men</p>
+                            <p class="prod-price-offer">
+                                <span class="actual">675/-</span>
+                                <span class="dis-count">899/-</span>
+                                <span class="parcent-off">(25%)</span>
+                            </p>
+                            <p>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="prod-blar"></div>
+                        <div class="aft-hover-container">
+                            <a class="wish-adder">
+                                <p class="hover-disp">
+                                    <i class="fas fa-heart"></i>
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="hover-disp">
+                                    <i class="fas fa-eye"></i>
+                                </p>
+                            </a>
+                            <a class="add-to-cart">
+                                <p class="hover-disp">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product-3 -->
+                    <div class="prod-list-with-img-and-rating level-3" aria-labelledby="Product image and deatials">
+                        <img src="img/product3.png" alt="item-display-product" class="prod-img-display">
+
+                        <span class="new">NEW</span>
+                        <div class="display-prod-info">
+                            <p class="prod-name-dis">Woolen Sweater For Girls </p>
+                            <p class="prod-price-offer">
+                                <span class="actual">899/-</span>
+                                <span class="dis-count">1200/-</span>
+                                <span class="parcent-off">(33%)</span>
+                            </p>
+                            <p>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="prod-blar"></div>
+                        <div class="aft-hover-container">
+                            <a class="wish-adder">
+                                <p class="hover-disp">
+                                    <i class="fas fa-heart"></i>
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="hover-disp">
+                                    <i class="fas fa-eye"></i>
+                                </p>
+                            </a>
+                            <a class="add-to-cart">
+                                <p class="hover-disp">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product-4 -->
+                    <div class="prod-list-with-img-and-rating level-3" aria-labelledby="Product image and deatials">
+                        <img src="img/product1.png" alt="item-display-product" class="prod-img-display">
+
+                        <span class="new">NEW</span>
+                        <div class="display-prod-info">
+                            <p class="prod-name-dis">Short For Men</p>
+                            <p class="prod-price-offer">
+                                <span class="actual">449/-</span>
+                                <span class="dis-count">599/-</span>
+                                <span class="parcent-off">(33%)</span>
+                            </p>
+                            <p>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="prod-blar"></div>
+                        <div class="aft-hover-container">
+                            <a class="wish-adder">
+                                <p class="hover-disp">
+                                    <i class="fas fa-heart"></i>
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="hover-disp">
+                                    <i class="fas fa-eye"></i>
+                                </p>
+                            </a>
+                            <a class="add-to-cart">
+                                <p class="hover-disp">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product-5 -->
+                    <div class="prod-list-with-img-and-rating level-3" aria-labelledby="Product image and deatials">
+                        <img src="img/product4.png" alt="item-display-product" class="prod-img-display">
+
+                        <span class="new">NEW</span>
+                        <div class="display-prod-info">
+                            <p class="prod-name-dis">Woolen Sweater For Men</p>
+                            <p class="prod-price-offer">
+                                <span class="actual">799/-</span>
+                                <span class="dis-count">1399/-</span>
+                                <span class="parcent-off">(35%)</span>
+                            </p>
+                            <p>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="prod-blar"></div>
+                        <div class="aft-hover-container">
+                            <a class="wish-adder">
+                                <p class="hover-disp">
+                                    <i class="fas fa-heart"></i>
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="hover-disp">
+                                    <i class="fas fa-eye"></i>
+                                </p>
+                            </a>
+                            <a class="add-to-cart">
+                                <p class="hover-disp">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product-6 -->
+                    <div class="prod-list-with-img-and-rating level-3" aria-labelledby="Product image and deatials">
+                        <img src="img/product5.png" alt="item-display-product" class="prod-img-display">
+
+                        <span class="new">NEW</span>
+                        <div class="display-prod-info">
+                            <p class="prod-name-dis">Sport Wear For Men</p>
+                            <p class="prod-price-offer">
+                                <span class="actual">689/-</span>
+                                <span class="dis-count">1099/-</span>
+                                <span class="parcent-off">(38%)</span>
+                            </p>
+                            <p>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="prod-blar"></div>
+                        <div class="aft-hover-container">
+                            <a class="wish-adder">
+                                <p class="hover-disp">
+                                    <i class="fas fa-heart"></i>
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="hover-disp">
+                                    <i class="fas fa-eye"></i>
+                                </p>
+                            </a>
+                            <a class="add-to-cart">
+                                <p class="hover-disp">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product-7 -->
+                    <div class="prod-list-with-img-and-rating level-3" aria-labelledby="Product image and deatials">
+                        <img src="img/product2.png" alt="item-display-product" class="prod-img-display">
+
+                        <div class="display-prod-info">
+                            <p class="prod-name-dis">Cotten T-Shirt For Men</p>
+                            <p class="prod-price-offer">
+                                <span class="actual">675/-</span>
+                                <span class="dis-count">899/-</span>
+                                <span class="parcent-off">(25%)</span>
+                            </p>
+                            <p>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="prod-blar"></div>
+                        <div class="aft-hover-container">
+                            <a class="wish-adder">
+                                <p class="hover-disp">
+                                    <i class="fas fa-heart"></i>
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="hover-disp">
+                                    <i class="fas fa-eye"></i>
+                                </p>
+                            </a>
+                            <a class="add-to-cart">
+                                <p class="hover-disp">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product-8 -->
+                    <div class="prod-list-with-img-and-rating level-3" aria-labelledby="Product image and deatials">
+                        <img src="img/product6.png" alt="item-display-product" class="prod-img-display">
+
+                        <span class="new">NEW</span>
+                        <div class="display-prod-info">
+                            <p class="prod-name-dis">Blaser For Men </p>
+                            <p class="prod-price-offer">
+                                <span class="actual">1399/-</span>
+                                <span class="dis-count">2000/-</span>
+                                <span class="parcent-off">(30%)</span>
+                            </p>
+                            <p>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="prod-blar"></div>
+                        <div class="aft-hover-container">
+                            <a class="wish-adder">
+                                <p class="hover-disp">
+                                    <i class="fas fa-heart"></i>
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="hover-disp">
+                                    <i class="fas fa-eye"></i>
+                                </p>
+                            </a>
+                            <a class="add-to-cart">
+                                <p class="hover-disp">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product-9 -->
+                    <div class="prod-list-with-img-and-rating level-3" aria-labelledby="Product image and deatials">
+                        <img src="img/product3.png" alt="item-display-product" class="prod-img-display">
+
+                        <span class="new">NEW</span>
+                        <div class="display-prod-info">
+                            <p class="prod-name-dis">Woolen Sweater For Girls</p>
+                            <p class="prod-price-offer">
+                                <span class="actual">899/-</span>
+                                <span class="dis-count">1200/-</span>
+                                <span class="parcent-off">(33%)</span>
+                            </p>
+                            <p>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="prod-blar"></div>
+                        <div class="aft-hover-container">
+                            <a class="wish-adder">
+                                <p class="hover-disp">
+                                    <i class="fas fa-heart"></i>
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="hover-disp">
+                                    <i class="fas fa-eye"></i>
+                                </p>
+                            </a>
+                            <a class="add-to-cart">
+                                <p class="hover-disp">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product list ends here -->
+    </section>
+    <!-- Fuetures in site in which site works -->
+    <section class="site-ways about-site">
+        <div class="raw containts">
+            <div class="site-fundamentals">
+                <div class="img-site-box">
+                    <img src="img/Image 34.png" alt="secure" class="site-box-img">
+                </div>
+                <div class="site-ways-info">
+                    <h4>100 % SECURE PAYMENTS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, saepe.</p>
+                </div>
+            </div>
+            <div class="site-fundamentals">
+                <div class="img-site-box">
+                    <img src="img/Image 35.png" alt="trust pay" class="site-box-img">
+                </div>
+                <div class="site-ways-info">
+                    <h4>TRUST PAY</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, ullam!</p>
+                </div>
+            </div>
+            <div class="site-fundamentals">
+                <div class="img-site-box">
+                    <img src="img/Image 36.png" alt="help" class="site-box-img">
+                </div>
+                <div class="site-ways-info">
+                    <h4>HELP CENTER</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eos?</p>
+                </div>
+            </div>
+            <div class="site-fundamentals">
+                <div class="img-site-box">
+                    <img src="img/Image 37.png" alt="shop" class="site-box-img">
+                </div>
+                <div class="site-ways-info">
+                    <h4>SHOP ON THE GO</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer with info about site and company ,policys and 
+        payment methodes ,social connectivity -->
+    <footer class="footer-page">
+        <div class="raw pages">
+            <div class="vert policy-info">
+                <h6>POLICY INFO</h6>
+                <a href="#">
+                    <p>Privacy Policy</p>
+                </a>
+                <a href="#">
+                    <p>Terms Of Sales</p>
+                </a>
+                <a href="#">
+                    <p>Terms Of Use</p>
+                </a>
+                <a href="#">
+                    <p>Report Abuse & Takedown Policy</p>
+                </a>
+            </div>
+            <div class="vert company">
+                <h6>COMPANY</h6>
+                <a href="#">
+                    <p>About Us</p>
+                </a>
+                <a href="#">
+                    <p>Core value</p>
+                </a>
+                <a href="#">
+                    <p>Careers</p>
+                </a>
+                <a href="#">
+                    <p>Blog</p>
+                </a>
+                <a href="#">
+                    <p>Site Map</p>
+                </a>
+            </div>
+            <div class="vert snapdeal">
+                <h6>SNAPDEAL BUSINESS</h6>
+                <a href="#">
+                    <p>Shopping App</p>
+                </a>
+                <a href="#">
+                    <p>Sell on Snapdeal</p>
+                </a>
+                <a href="#">
+                    <p>Advertise on Snapdeal</p>
+                </a>
+                <a href="#">
+                    <p>Media Enquiries</p>
+                </a>
+                <a href="#">
+                    <p>Be an Affiliate</p>
+                </a>
+            </div>
+            <div class="vert need-help">
+                <h6>NEED HELP?</h6>
+                <a href="#">
+                    <p>FAQ</p>
+                </a>
+                <a href="#">
+                    <p>Contact Us</p>
+                </a>
+                <a href="#">
+                    <p>Online Shopping</p>
+                </a>
+            </div>
+            <div class="vert subscribe">
+                <h6>SUBSCRIBE</h6>
+                <div class="email-cntainer">
+                    <input type="email" name="email" id="email" placeholder="Your Email Address">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+                <p>Register now to get updates on promotions and coupons or
+                    <a href="#">Download App</a></p>
+            </div>
+        </div>
+        <div class="payment-gateway and-social-icons">
+            <div class="payment-gate">
+                <h6>PAYMENT</h6>
+                <div class="payment-box">
+                    <a href="#">
+                        <div class="payment-img-box"><img src="img/Image 38.png" alt="z" class="payimg"></div>
+                    </a>
+
+                    <a href="#">
+                        <div class="payment-img-box"><img src="img/Image 39.png" alt="z" class="payimg"></div>
+                    </a>
+
+                    <a href="#">
+                        <div class="payment-img-box"><img src="img/Image 40.png" alt="z" class="payimg"></div>
+                    </a>
+
+                    <a href="#">
+                        <div class="payment-img-box"><img src="img/Image 41.png" alt="z" class="payimg"></div>
+                    </a>
+
+                    <a href="#">
+                        <div class="payment-img-box"><img src="img/Image 42.png" alt="z" class="payimg"></div>
+                    </a>
+
+                    <a href="#">
+                        <div class="payment-img-box"><img src="img/Image 43.png" alt="z" class="payimg"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="social-icons-co">
+                <div class="connect">
+                    <h6>CONNECT</h6>
+                </div>
+                <div class="social-box">
+                    <a href="#">
+                        <span>
+                            <i class="fab fa-facebook" id="fb"></i>
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span>
+                            <i class="fab fa-twitter" id="tw"></i>
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span>
+                            <i class="fab fa-youtube" id="yt"></i>
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span>
+                            <i class="fab fa-instagram" id="in"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="scrollUp">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script> -->
+    <script src="/js/flag.js"></script>
+</body>
+
+</html>
